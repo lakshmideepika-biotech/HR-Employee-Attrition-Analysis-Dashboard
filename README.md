@@ -1,36 +1,37 @@
-# HR Employee Attrition Analysis
+# HR Employee Attrition Analysis Dashboard
 
-## Project Overview
-This project analyzes employee data to understand the reasons behind employee attrition and identify important HR trends using Python, SQL, and Power BI.
+## Objective
+Find the main reasons employees leave a company and suggest ways to reduce attrition.
+
+## Dataset
+1,470 employees from the IBM HR Analytics Employee Attrition dataset.
 
 ## Tools Used
-- Python
-- SQL
-- Power BI
-- Excel
+SQL Server (SSMS), Python (Pandas, Kaggle Notebooks), Power BI (DAX)
 
-## Objectives
-- Analyze employee attrition patterns
-- Identify factors affecting employee turnover
-- Study department and job role performance
-- Create an interactive HR dashboard
+## Approach
+1. SQL: wrote queries to compare attrition across department, job role, overtime and tenure.
+2. Python: cleaned the data and explored it with EDA.
+3. Power BI: built a dashboard with Total Employees, Attrition Count and Attrition Rate measures, KPI cards and slicers.
 
-## Key Analysis
-- Employee demographics analysis
-- Attrition rate calculation
-- Department-wise attrition
-- Job role analysis
-- Salary and satisfaction analysis
+## Key Findings
+- Overall attrition rate: 16.1% (237 of 1,470 employees)
+- Overtime workers: 30.5% attrition, vs 10.4% for those without overtime
+- Sales Representatives: 39.8% attrition, the highest of any job role
+- Employees with 2 years or less at the company: 29.8% attrition
+- Single employees: 25.5% attrition, vs 12.5% for married
+- Sales department: 20.6% attrition, vs 13.8% in Research & Development
 
-## Dashboard KPIs
-- Total Employees
-- Attrition Count
-- Attrition Rate
-- Average Age
-- Average Salary
+## Dashboard
+![Dashboard](dashboard.png)
 
-## Skills Demonstrated
-Python | SQL | Power BI | Data Cleaning | Data Visualization | HR Analytics
+## Recommendations
+- Review overtime workloads, since overtime is linked to much higher attrition.
+- Add onboarding and support for new hires, especially in Sales.
+- Look into pay and career growth for Sales Representatives.
 
-## Author
-Lakshmi Deepika
+## Files
+- `HR Analytics.sql`: SQL queries (SSMS)
+- `hr-attrition-analytics.ipynb`: Python EDA notebook
+- `HR Attrition Analytics.pbix`: Power BI dashboard
+- `WA_Fn-UseC_-HR-Employee-Attrition.csv`: dataset
